@@ -1,0 +1,128 @@
+--- 
+hash: f4433c80ddfa8b43a7b47d4c6fa21f3aa7e5af71
+sources: 
+- Git: 
+    git: git://github.com/jnunemaker/mongomapper.git
+    uri: git://github.com/jnunemaker/mongomapper.git
+    ref: f7f935c94e9ac66fdef916542555445127020113
+- Rubygems: 
+    uri: http://rubygems.org
+specs: 
+- rake: 
+    version: 0.8.7
+- abstract: 
+    version: 1.0.0
+- builder: 
+    version: 2.1.2
+- i18n: 
+    version: 0.3.7
+- memcache-client: 
+    version: 1.8.3
+- tzinfo: 
+    version: 0.3.20
+- activesupport: 
+    version: 3.0.0.beta3
+- activemodel: 
+    version: 3.0.0.beta3
+- erubis: 
+    version: 2.6.5
+- rack: 
+    version: 1.1.0
+- rack-mount: 
+    version: 0.6.3
+- rack-test: 
+    version: 0.5.3
+- actionpack: 
+    version: 3.0.0.beta3
+- mime-types: 
+    version: "1.16"
+- polyglot: 
+    version: 0.3.1
+- treetop: 
+    version: 1.4.5
+- mail: 
+    version: 2.2.1
+- text-hyphen: 
+    version: 1.0.0
+- text-format: 
+    version: 1.0.0
+- actionmailer: 
+    version: 3.0.0.beta3
+- arel: 
+    version: 0.3.3
+- activerecord: 
+    version: 3.0.0.beta3
+- activeresource: 
+    version: 3.0.0.beta3
+- bson: 
+    version: "1.0"
+- bundler: 
+    version: 0.9.25
+- faker: 
+    version: 0.3.1
+- haml: 
+    version: 3.0.2
+- jnunemaker-validatable: 
+    version: 1.8.4
+- machinist: 
+    version: 1.0.6
+- mongo: 
+    version: "1.0"
+- mongo_mapper: 
+    version: 0.7.5
+    source: 0
+- nokogiri: 
+    version: 1.4.1
+- thor: 
+    version: 0.13.6
+- railties: 
+    version: 3.0.0.beta3
+- rails: 
+    version: 3.0.0.beta3
+- rails3-generators: 
+    version: 0.7.1
+- rspec-core: 
+    version: 2.0.0.beta.8
+- rspec-expectations: 
+    version: 2.0.0.beta.8
+- rspec-mocks: 
+    version: 2.0.0.beta.8
+- rspec: 
+    version: 2.0.0.beta.8
+- webrat: 
+    version: 0.7.1
+- rspec-rails: 
+    version: 2.0.0.beta.8
+dependencies: 
+  rails: 
+    version: = 3.0.0.beta3
+    group: 
+    - :default
+  mongo_mapper: 
+    version: ">= 0"
+    group: 
+    - :default
+  haml: 
+    version: ">= 0"
+    group: 
+    - :default
+  rails3-generators: 
+    version: ">= 0"
+    group: 
+    - :default
+  faker: 
+    version: ">= 0"
+    group: 
+    - :default
+  rspec: 
+    version: ">= 2.0.0.a5"
+    group: 
+    - :test
+  rspec-rails: 
+    version: ">= 2.0.0.a6"
+    group: 
+    - :test
+  machinist: 
+    version: ">= 0"
+    group: 
+    - :test

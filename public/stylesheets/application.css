@@ -1,0 +1,94 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font: 1em/1.625em "lucida grande", "lucida sans unicode", "Arial";
+  background: #c1e7f0;
+  color: black;
+  padding: 0px;
+  margin: 0px; }
+
+body #wrapper {
+  z-index: 1000;
+  width: 960px;
+  margin: 0 auto; }
+
+#wrapper #header {
+  background: url("/images/header_top.png") top no-repeat;
+  height: 121px; }
+
+#board {
+  position: absolute;
+  background: url("/images/board.png") top no-repeat;
+  height: 230px;
+  width: 230px;
+  top: 30px; }
+  #board h2 {
+    text-indent: -9999px; }
+    #board h2 a {
+      text-decoration: none;
+      width: 230px;
+      height: 160px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      display: block; }
+
+#wrapper #content {
+  float: left;
+  margin-left: 240px;
+  padding: 0px;
+  margin-top: -60px; }
+  #wrapper #content h2 {
+    padding: 0px;
+    margin: 0px; }
+  #wrapper #content #posts .article {
+    margin-top: 40px; }
+    #wrapper #content #posts .article .info h2 {
+      margin: 0px;
+      padding: 0px; }
+    #wrapper #content #posts .article .info .meta {
+      font-style: italic;
+      padding: 0px;
+      margin: 0px; }
+
+#clouds {
+  top: 30px;
+  left: 0;
+  height: 800px;
+  width: 100%;
+  z-index: 1;
+  background: url("/images/clouds.gif"); }
+
+#footer {
+  clear: left;
+  position: relative;
+  background: url("/images/footer2.png") top left repeat-x;
+  height: 324px;
+  width: 100%;
+  overflow: hide; }
+  #footer #surfer {
+    background: url("/images/surfer.png") top left no-repeat;
+    width: 46px;
+    height: 80px;
+    position: absolute;
+    bottom: 100px; }
+  #footer #bird {
+    background: url("/images/bird.png") top left no-repeat;
+    width: 70px;
+    height: 106px;
+    position: absolute;
+    right: 10px; }
+  #footer #left_bottom {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: url("/images/palms.png") top left no-repeat;
+    width: 324px;
+    height: 331px; }
+  #footer #credits {
+    position: absolute;
+    color: black;
+    padding-right: 5px;
+    font-size: 10px;
+    bottom: 0px;
+    right: 0px; }

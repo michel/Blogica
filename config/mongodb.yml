@@ -1,0 +1,26 @@
+base: &base
+  adapter: mongodb
+  database: blogica_development
+#These are needed to authenticate with your db
+#should it run on another server
+  host: 127.0.0.1
+  username: blogica
+  password: blogica 
+ 
+development:
+  <<: *base
+ 
+test:
+  <<: *base  
+  database: blogica_test
+ 
+production:
+  <<: *base
+  database: blogica_production
+ 
+
+cucumber:
+  <<: *base  
+  database: blogica_test
+              
+
