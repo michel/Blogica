@@ -33,11 +33,24 @@ body #wrapper {
       border: 0;
       display: block; }
 
+#wrapper #side {
+  position: absolute;
+  width: 200px;
+  padding-left: 30px;
+  margin-top: 150px; }
+  #wrapper #side h2 {
+    margin: 0px;
+    padding: 0 0 0 4px;
+    font-size: 16px; }
+  #wrapper #side #photos img {
+    float: left;
+    margin: 5px; }
+
 #wrapper #content {
   float: left;
   margin-left: 240px;
   padding: 0px;
-  margin-top: -60px; }
+  margin-top: -30px; }
   #wrapper #content h2 {
     padding: 0px;
     margin: 0px; }
@@ -92,3 +105,9 @@ body #wrapper {
     font-size: 10px;
     bottom: 0px;
     right: 0px; }
+
+.twtr-hd {
+  display: none; }
+
+.twtr-ft {
+  display: none; }

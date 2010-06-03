@@ -1,0 +1,33 @@
+#twitter
+  %h2
+    Twitter feed
+  %script{:type => "text/javascript", :src => "http://widgets.twimg.com/j/2/widget.js"}
+  :javascript
+    new TWTR.Widget({
+      version: 2,
+      type: 'list',
+      rpp: 3,
+      interval: 6000,
+      width: 200,
+      height: 360,
+      theme: {
+        shell: {
+          background: 'transparent',
+          color: 'transparent'
+        },
+        tweets: {
+          background: 'transparent',
+          color: '#444444',
+          links: '#000000'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        behavior: 'all'
+      }
+    }).render().setList('micheldegraaf', 'roadtrip').start();

@@ -8,7 +8,6 @@
     = stylesheet_link_tag "typography.css"
     
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
-    = javascript_include_tag 'jquery.flip'
     
     = javascript_include_tag 'rails'
     = javascript_include_tag 'application'
@@ -16,12 +15,14 @@
     %meta{:name => 'csrf-token', :content => form_authenticity_token}
     %meta{:name => 'csrf-param', :content => 'authenticity_token'}  
   %body   
-    
     #wrapper
       #header
         #board                       
           %h2
-            =link_to "The epic roadtrip blog 2010", "/"     
+            =link_to "The epic roadtrip blog 2010", "/"             
+      #side
+        = render :partial => "shared/widgets/twitter"
+        = render :partial => "shared/widgets/photos"
       #content
         = yield
     #clouds         
