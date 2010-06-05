@@ -1,0 +1,20 @@
+= form_for @post do |form|  
+ 
+  = form.error_messages  
+  = form.label :author_name 
+  = form.text_field :author_name    
+  %br    
+  = form.label :title 
+  = form.text_field :title
+  %br    
+  = form.label :location 
+  = form.text_field :location
+  %br                                    
+  = form.label :body  
+  %br                                      
+  = form.text_area :body   
+  %br
+  = form.submit "Post"
+  
+  
+

@@ -33,6 +33,11 @@ body #wrapper {
       border: 0;
       display: block; }
 
+#location {
+  position: absolute;
+  top: 230px;
+  margin-left: 40px; }
+
 #wrapper #side {
   position: absolute;
   width: 200px;

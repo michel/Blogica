@@ -13,7 +13,10 @@ Blogica::Application.routes.draw do |map|
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   resources :posts do
     resources :comments
-  end
+  end   
+  
+  
+  
 
   # Sample resource route with options:
   #   resources :products do
