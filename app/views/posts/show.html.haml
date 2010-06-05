@@ -8,4 +8,10 @@
       ago by
       = @post.author_name
   .body
-    = @post.body
+    = @post.body           
+  - unless @post.comments.empty?   
+    .comments                    
+      %h3
+        Comments
+      = render :collection => @post.comments, :partial => "comments/comment"
+  = render :partial => "comments/form"

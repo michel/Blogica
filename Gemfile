@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.0.beta3'     
-gem 'mongo_mapper', :git => 'git://github.com/jnunemaker/mongomapper.git'
-gem "haml"     
+gem 'mongo_mapper' #, :git => 'git://github.com/jnunemaker/mongomapper.git'
+gem "haml"          
 gem "rails3-generators"      
 gem "faker"
 

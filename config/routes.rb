@@ -11,7 +11,9 @@ Blogica::Application.routes.draw do |map|
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
 
   # Sample resource route with options:
   #   resources :products do

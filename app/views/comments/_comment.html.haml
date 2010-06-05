@@ -1,0 +1,7 @@
+.comment
+  .meta
+    %span.name= comment.name
+    %span.date= "#{time_ago_in_words(comment.created_at)} ago"
+  .body= comment.body
+    
+    

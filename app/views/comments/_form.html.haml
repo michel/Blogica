@@ -1,0 +1,14 @@
+= form_for [@post,@comment] do |form|    
+  .errors   
+  = form.text_field :email  
+  = form.label :name 
+  = form.text_field :name    
+  %br                                    
+  = form.label :body , "Comment"     
+  %br                                      
+  = form.text_area :body   
+  %br
+  = form.submit "Post comment"
+  
+  
+

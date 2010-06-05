@@ -1,37 +1,8 @@
 --- 
-dependencies: 
-  faker: 
-    group: 
-    - :default
-    version: ">= 0"
-  mongo_mapper: 
-    group: 
-    - :default
-    version: ">= 0"
-  rails: 
-    group: 
-    - :default
-    version: = 3.0.0.beta3
-  haml: 
-    group: 
-    - :default
-    version: ">= 0"
-  machinist: 
-    group: 
-    - :test
-    version: ">= 0"
-  rspec: 
-    group: 
-    - :test
-    version: ">= 2.0.0.a5"
-  rails3-generators: 
-    group: 
-    - :default
-    version: ">= 0"
-  rspec-rails: 
-    group: 
-    - :test
-    version: ">= 2.0.0.a6"
+hash: bc5d87b206699e08f941391855af75f9570472f3
+sources: 
+- Rubygems: 
+    uri: http://rubygems.org
 specs: 
 - rake: 
     version: 0.8.7
@@ -80,7 +51,7 @@ specs:
 - activeresource: 
     version: 3.0.0.beta3
 - bson: 
-    version: 1.0.1
+    version: "1.0"
 - bundler: 
     version: 0.9.25
 - diff-lcs: 
@@ -94,12 +65,11 @@ specs:
 - machinist: 
     version: 1.0.6
 - mongo: 
-    version: 1.0.1
+    version: "1.0"
 - plucky: 
-    version: 0.2.1
+    version: 0.1.1
 - mongo_mapper: 
     version: 0.7.6
-    source: 0
 - nokogiri: 
     version: 1.4.2
 - thor: 
@@ -122,11 +92,36 @@ specs:
     version: 0.7.1
 - rspec-rails: 
     version: 2.0.0.beta.10
-hash: f4433c80ddfa8b43a7b47d4c6fa21f3aa7e5af71
-sources: 
-- Git: 
-    uri: git://github.com/jnunemaker/mongomapper.git
-    git: git://github.com/jnunemaker/mongomapper.git
-    ref: e46e6baceda65237fb248f723a6fbd7b39944a6f
-- Rubygems: 
-    uri: http://rubygems.org
+dependencies: 
+  rails: 
+    version: = 3.0.0.beta3
+    group: 
+    - :default
+  mongo_mapper: 
+    version: ">= 0"
+    group: 
+    - :default
+  haml: 
+    version: ">= 0"
+    group: 
+    - :default
+  rails3-generators: 
+    version: ">= 0"
+    group: 
+    - :default
+  faker: 
+    version: ">= 0"
+    group: 
+    - :default
+  rspec: 
+    version: ">= 2.0.0.a5"
+    group: 
+    - :test
+  rspec-rails: 
+    version: ">= 2.0.0.a6"
+    group: 
+    - :test
+  machinist: 
+    version: ">= 0"
+    group: 
+    - :test

@@ -5,7 +5,60 @@ $(function() {
   animateClouds("#clouds");
   animateSurfer("#surfer");
   animateBird("#bird");  
+  Comment.bind();
 });
+       
+  
+  
+var Comment = {
+   selector : "form.new_comment",
+   spinner_src: "/images/loading.gif",
+   
+   bind: function() {
+     $(Comment.selector).submit(Comment.send);     
+     $(Comment.selector + " .errors").hide();
+   },
+
+   send: function() {
+     Comment.load();
+     $(Comment.selector + " .errors").html("");
+      $.ajax({
+        type: "POST",
+        url: $(Comment.selector).attr("action"),
+        data: $(Comment.selector).serialize(), 
+             success:  function(data) {  Comment.receive(data); },
+             error:  function(data) {  Comment.fail(data);}
+      });
+                   
+		  return false;
+   },
+
+   fail: function(data) {
+     Comment.complete();         
+     $(Comment.selector + " .errors").html(data.responseText); 
+     $(Comment.selector + " .errors").show();                                 
+   },
+
+   receive: function(data) {
+     Comment.complete();
+     $(data).appendTo(".comments");    
+     $(Comment.selector)[0].reset();
+   },
+
+   load: function() {                       
+     $(Comment.selector).hide();
+     $("<div class='comment_spinner'> <img src='"+Comment.spinner_src+"' alt='spinner' /> &nbsp; &nbsp; Posting comment  </div>").insertAfter(Comment.selector);
+   },
+   
+   complete: function() {
+     $(".comment_spinner").remove();
+     $(Comment.selector).show();
+     $(Comment.selector + " .errors").hide();                            
+   }
+ }
+ 
+ Comment.bind();  
+
 
 var animateClouds = function(element) {
   $(element).animate({backgroundPosition: "-6000px 0px"}, 200000, "linear");                             
@@ -32,3 +85,4 @@ var animateSurfer = function(element) {
                          animateSurfer($surfer);
                   });
 }
+        
