@@ -1,8 +1,37 @@
 --- 
-hash: bc5d87b206699e08f941391855af75f9570472f3
-sources: 
-- Rubygems: 
-    uri: http://rubygems.org
+dependencies: 
+  faker: 
+    group: 
+    - :default
+    version: ">= 0"
+  mongo_mapper: 
+    group: 
+    - :default
+    version: ">= 0"
+  rails: 
+    group: 
+    - :default
+    version: = 3.0.0.beta3
+  haml: 
+    group: 
+    - :default
+    version: ">= 0"
+  machinist: 
+    group: 
+    - :test
+    version: ">= 0"
+  rspec: 
+    group: 
+    - :test
+    version: ">= 2.0.0.a5"
+  rails3-generators: 
+    group: 
+    - :default
+    version: ">= 0"
+  rspec-rails: 
+    group: 
+    - :test
+    version: ">= 2.0.0.a6"
 specs: 
 - rake: 
     version: 0.8.7
@@ -92,36 +121,7 @@ specs:
     version: 0.7.1
 - rspec-rails: 
     version: 2.0.0.beta.10
-dependencies: 
-  rails: 
-    version: = 3.0.0.beta3
-    group: 
-    - :default
-  mongo_mapper: 
-    version: ">= 0"
-    group: 
-    - :default
-  haml: 
-    version: ">= 0"
-    group: 
-    - :default
-  rails3-generators: 
-    version: ">= 0"
-    group: 
-    - :default
-  faker: 
-    version: ">= 0"
-    group: 
-    - :default
-  rspec: 
-    version: ">= 2.0.0.a5"
-    group: 
-    - :test
-  rspec-rails: 
-    version: ">= 2.0.0.a6"
-    group: 
-    - :test
-  machinist: 
-    version: ">= 0"
-    group: 
-    - :test
+hash: bc5d87b206699e08f941391855af75f9570472f3
+sources: 
+- Rubygems: 
+    uri: http://rubygems.org

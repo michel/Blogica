@@ -8,7 +8,7 @@
       ago by
       = @post.author_name
   .body
-    = @post.body           
+    = raw(@post.body)
   .comments                    
     %h3
       Comments
