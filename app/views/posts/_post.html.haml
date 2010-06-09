@@ -8,5 +8,5 @@
       ago by
       = post.author_name
   .body
-    = truncate(post.body, 200)
+    = truncate(raw(post.body), 200)
     = link_to("Read more..", post_path(post))
