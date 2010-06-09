@@ -9,6 +9,7 @@ base: &base
  
 development:
   <<: *base
+  database: blogica_development
  
 test:
   <<: *base  
