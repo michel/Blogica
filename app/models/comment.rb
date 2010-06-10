@@ -1,14 +1,19 @@
 class Comment                          
-  include MongoMapper::Document         
+  include Mongoid::Document
+  include Mongoid::Timestamps
 
   # Keys
-  key :name, String, :required => true
-  key :body, String, :required => true        
-  key :post_id , ObjectId
-  timestamps!            
+  field :name
+  field :body   
   
-  belongs_to :post
+  # Assosiations
+  embedded_in :post, :inverse_of => :comment
   
+  # Validations
+  validates_presence_of :name
+  validates_presence_of :body
+  
+  # Used for anti spamm
   attr_accessor :email   
   
   

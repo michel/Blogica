@@ -1,16 +1,19 @@
 class Post
-  include MongoMapper::Document         
+  include Mongoid::Document
+  include Mongoid::Timestamps
+
   
   # Keys 
-  key :author_name, String, :required => true          
-  key :title, String, :required => true
-  key :body, String, :required => true   
-  key :location, String , :required => true
-  timestamps!       
-   
+  field :author_name 
+  field :title
+  field :body
+  field :location
+     
   # Associations                   
-  many :comments               
+  embeds_many :comments               
   
+  # Validations
+  validates_presence_of :author_name, :title, :body, :location
          
   def name
     "post"    

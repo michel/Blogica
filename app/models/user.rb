@@ -1,6 +1,13 @@
 class User
-  include MongoMapper::Document         
-  key :username, String, :required => true
-  key :password, String, :required => true
+  include Mongoid::Document
+  include Mongoid::Timestamps
   
+  #keys
+  field :username
+  field :password
+  
+  #validation
+  validates_presence_of :password
+  validates_presence_of :username
+                 
 end

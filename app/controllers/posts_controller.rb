@@ -1,14 +1,12 @@
 class PostsController < ApplicationController                    
   before_filter :authenticate, :except => [:index,:show]
   def index
-    @posts = Post.paginate(:page => params[:page], :order => "created_at desc")                 
-    fresh_when :etag => @posts.last.created_at
+    @posts = Post.criteria.order_by([:created_at,:desc]).paginate(:page => params[:page])                 
   end         
   
   def show
-    @post = Post.find(params[:id])         
+    @post = Post.find(params[:id])
     @comment = Comment.new
-    fresh_when :etag => [@post,@comment]    
   end
   
   def new
