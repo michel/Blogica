@@ -1,5 +1,5 @@
 module ApplicationHelper
   def current_location
-   Post.first(:order => "created_at desc").location rescue "VTown"
+   Post.criteria.order_by([:created_at,:desc]).first.location
   end
 end
